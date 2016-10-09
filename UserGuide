@@ -1,18 +1,32 @@
 A Propos  :
 
 SharpCompta  est un logiciel open source de comptabilité général  offrant les fonctionnalités suivantes :
+
 Saisie et listing du plan comptable.
+
 Saisie et listing des journaux auxiliaires.
+
 Saisie et listing des libelles automatique.
+
 Saisie des écritures.
+
 Edition des journaux auxiliaires.
+
 Edition du grand livre.
+
 Edition des balances général et résumé.
+
 Export des données sur papier (impression) ou sur Excel.
+
 La possibilité de travailler en réseau et multipostes .
+
 Installation :
+
+Cliquer sur le bouton Clone or Dowload . Telecharger le fichier zip et decompresser le dans 
+un nouveau dossier a renommer SharpCompta dans votre répertoire racine.
+
 Télécharger le Framework  .net ( version 4.0 ou plus ) et installer le sur votre système.
-Décompresser  SharpCompta.zip et copier le dossier SharpCompta  dans votre répertoire racine.
+
 Configuration réseau  :
 
 «  Si vous n’avez pas le besoin de travailler en multiposte , il n’est pas indispensable de réaliser
@@ -30,43 +44,72 @@ Dans la ligne <add key="DataBase" value=" Access " /> remplacer Access par SqlSe
 Utilisation:
 
 Pour lancer SharpCompta , vous cliquez sur le fichier :
+
 répertoire racine\ SharpCompta\Bin\ SharpCompta2007.exe.
+
 Configuration du Dossier :
+
 Cliquez sur le menu Données/Dossier , dans le masque de saisie affiché entrez la raison social de votre établissement et l’année de votre exercice puis valider en cliquant sur le Bouton Modifier.
+
 Saisie du plan comptable :
+
 Cliquez sur le menu  Plan Comptable \Saisie puis saisissez votre plan en plus des a nouveaux
 Dans SharpCompta le journal des a nouveaux est automatique, son code est 9000.
- les comptes ordinaires ont le niveau 1, les comptes globaux ou cumuls ont le niveau 2.
+
+Les comptes ordinaires ont le niveau 1, les comptes globaux ou cumuls ont le niveau 2.
+
 Exemple Si  les comptes clients commencent par 20000001, le compte cumul des clients
 Doit avoir être  20000000 et avoir 2 comme niveau.
+
 Saisie du journaux :
+
 Cliquez sur le menu  Journaux Auxiliaires\ Saisie puis saisissez vos journaux. 
 Saisie des libelles automatiques :
-En vue de faciliter la saisie,  les motifs récurrents ( exemple : Facture ou cheque)  peuvent être codifiés
-Autant que libelles automatique.
+En vue de faciliter la saisie,  les motifs récurrents ( exemple : Facture ou cheque)
+peuvent être codifiés Autant que libelles automatique.
+
 Cliquez sur le menu  Libelles Automatiques\ Saisie puis saisissez vos libelles automatique. 
 Saisie des écritures :
-Cliquez sur le menu  Écritures\ Saisie. 
+
+Cliquez sur le menu  Écritures\ Saisie.
+
 Le champ Exercice montre l’année  de l’exercice courant.
+
 A partir du masque de saisie des écritures vous pouvez accéder :
+
 -	Au Listing du plan comptable en cliquant sur le bouton Afficher Plan.
+
 -	Au masque de la saisie des comptes en cliquant sur le bouton Créer Compte.
+
 -	Au masque de la saisie des libelles automatiques en cliquant sur le bouton Créer LA.
+
 -	Au Listing des  libelles automatiques en cliquant sur le bouton Afficher LA.
+
 Lorsque vous entrez le code journal  les cumuls globaux des mouvements au bas du masque.
+
 Lorsque vous entrez le mois de l’écriture  les cumuls des mouvements juste au dessus des
 Cumuls globaux.
-Aux champ de saisie La,  si vous entrez un code libelle automatique , le libelle automatique correspondant serait affiché aux champ Libelle.
+
+Aux champ de saisie La,  si vous entrez un code libelle automatique , le libelle automatique correspondant serait 
+affiché aux champ Libelle.
+
 Dans le champs de saisie DC vous spécifiez si l’écriture est débit ou crédit en entrant respectivement
 Les lettres d et c ( en minuscule ou majuscule ).
+
 Cliquez sur le bouton Enregistrer ou l’appui sur la touche F10 permet d’enregistrer l’écriture.
 Consultation des Livres comptables.
+
 Pour consulter ou éditer les journaux vous cliquez sur le menu Ecritures / Afficher  Journaux.
+
 Dans la fenêtre d’affichage des journaux  les pièces comptables  sont codifié comme suit
 Code journal | mois | Numéro d’ordre = | 4 chiffres | 2 chiffres | 4 chiffres |.
-Pour  consulter ou éditer  le grand livre vous cliquez sur le menu Livres / Grand Livre.
+
+Pour  consulter ou éditer  le grand livre vous cliquez sur le menu Livres / Grand Livre
+.
 Pour  consulter ou éditer  la balance  vous cliquez sur le menu Livres / Balance.
+
 Importation des données.
+
 Une fois , l’exercice est clos, vous sauvegardez votre répertoire données : répertoire d’installation\SharpCompta\Data
 Et vous l’archivez dans votre media de sauvegarde. 
 
@@ -74,9 +117,12 @@ Vous cliquez sur le menu Données/Dossier  pour entrer l’année du nouvel  exe
 Puis vous cliquez sur la fenêtre Données / Importations :
 
 Vous avez 3 possibilités :
+
 -	L’importation du plan comptable, les journaux et les libelles automatiques. 
+
 -	L’importation du plan comptable, les journaux et les libelles automatiques  en plus des 
--	a nouveaux.
+a nouveaux.
+
 -	La remise a zéro ou l’effacement total  des données de la base.
 
 
